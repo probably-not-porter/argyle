@@ -114,7 +114,7 @@ h3{
     transform: rotate(45deg);
     width: 1px;
     height: 210px;
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: -55px;
     position: absolute;
 }
@@ -125,8 +125,30 @@ h3{
     transform: rotate(45deg);
     width: 1px;
     height: 210px;
-    margin-left: 60px;
+    margin-left: 70px;
     margin-top: -55px;
+    position: absolute;
+}
+#line5{
+    background-color: var(--color-5);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+    width: 1px;
+    height: 210px;
+    margin-left: 35px;
+    margin-top: -45px;
+    position: absolute;
+}
+#line6{
+    background-color: var(--color-5);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+    width: 1px;
+    height: 210px;
+    margin-left: 75px;
+    margin-top: -45px;
     position: absolute;
 }
 #color{
