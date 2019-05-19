@@ -5,6 +5,7 @@
     --color-2:#F6D55C;
     --color-3:#ffffff;
     --color-4:#ED553B;
+    --color-5:#ED553B;
 }
 
 body{
@@ -36,7 +37,7 @@ body{
     position: absolute;
     top:0;
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -106,22 +107,22 @@ h3{
     position: absolute;
 }
 #line3{
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Safari */
     transform: rotate(45deg);
-    width: 2px;
+    width: 1px;
     height: 200px;
     margin-left: 45px;
     margin-top: -55px;
     position: absolute;
 }
 #line4{
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Safari */
     transform: rotate(45deg);
-    width: 2px;
+    width: 1px;
     height: 200px;
     margin-left: 65px;
     margin-top: -55px;

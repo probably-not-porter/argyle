@@ -11,6 +11,8 @@ window.onload = function() {
     document.getElementById("colorpick2").value = getComputedStyle(document.documentElement).getPropertyValue('--color-2');
     document.getElementById("colorpick3").value = getComputedStyle(document.documentElement).getPropertyValue('--color-3');
     document.getElementById("colorpick4").value = getComputedStyle(document.documentElement).getPropertyValue('--color-4');
+    document.getElementById("colorpick5").value = getComputedStyle(document.documentElement).getPropertyValue('--color-5');
+
 }
 
 function change1(color){
@@ -24,6 +26,9 @@ function change3(color){
 }
 function change4(color){
     document.documentElement.style.setProperty('--color-4', color);
+}
+function change5(color){
+    document.documentElement.style.setProperty('--color-5', color);
 }
 
 function main() {
