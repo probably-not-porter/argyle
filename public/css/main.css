@@ -43,7 +43,7 @@ body{
 }
 
 #label{
-    transition-duration: 300ms;
+    transition-duration: 5000ms;
     float: left;
     position: absolute;
     z-index: 1;
@@ -55,6 +55,12 @@ body{
     width: 200px;
     line-height: 50%;
 }
+#label:hover{
+    transition-duration: 300ms;
+    background-color: rgba(255,255,255,0.95);
+    color: rgba(0,0,0,.95);
+}
+
 h1{
     font-size: 35px; 
     font-family: 'Amatic SC', cursive;
@@ -70,11 +76,6 @@ h3{
 #frame{
     font-size: 20px;
     font-family: 'Amatic SC', cursive;
-}
-#label:hover{
-    transition-duration: 300ms;
-    background-color: rgba(255,255,255,0.95);
-    color: rgba(0,0,0,.95);
 }
 
 
