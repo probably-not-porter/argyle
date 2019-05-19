@@ -6,7 +6,7 @@ var framecount = 565;
 window.onload = function() {
     container = document.getElementById("pattern-container");
     display = document.getElementById("frame");
-    setInterval(main, 10);
+    setInterval(main, 30);
     document.getElementById("colorpick1").value = getComputedStyle(document.documentElement).getPropertyValue('--color-1');
     document.getElementById("colorpick2").value = getComputedStyle(document.documentElement).getPropertyValue('--color-2');
     document.getElementById("colorpick3").value = getComputedStyle(document.documentElement).getPropertyValue('--color-3');
