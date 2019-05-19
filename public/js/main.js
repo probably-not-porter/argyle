@@ -1,8 +1,11 @@
 var x = 0;
 var container = document.getElementById("pattern-container");
+var display = document.getElementById("frame");
+var framecount = 565;
 
 window.onload = function() {
     container = document.getElementById("pattern-container");
+    display = document.getElementById("frame");
     setInterval(main, 10);
     document.getElementById("colorpick1").value = getComputedStyle(document.documentElement).getPropertyValue('--color-1');
     document.getElementById("colorpick2").value = getComputedStyle(document.documentElement).getPropertyValue('--color-2');
@@ -24,7 +27,7 @@ function change4(color){
 }
 
 function main() {
-    if (x > 560){
+    if (x > framecount){
         x = 0;
     }
     else{
@@ -32,6 +35,7 @@ function main() {
     }
     container.style.marginLeft = (x - 600).toString() + 'px';
     container.style.marginTop = (x / 2 - 600).toString() + 'px';
+    display.innerHTML = "frame: " + x.toString() + "/" + framecount.toString();
 }
 
 
