@@ -2,17 +2,36 @@
 <html lang="en" dir="ltr">
     <meta name="viewport" >
     <head>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body>
         <div id="label">
             <h1>Argyle</h1>
+            <h3>A pure CSS effect</h3>
             <h2>Porter Libby - 2019</h2>
         </div>
+
+        <div id="front">
+            <div id="front_btn">
+                <img src="img/gear.png" alt="Snow" style="width: 50px; height: 50px;">
+            </div>
+
+            <div id="controls">
+                <div id="close_btn">
+                    <img src="img/x.png" alt="Snow" style="width: 50px; height: 50px; padding-top: 40px;">
+                </div>
+                <h2>Primary Color   <input onchange="change1(this.value)" type="color" id="colorpick1"></h2>
+                <h2>Secondary Color 1   <input onchange="change2(this.value)" type="color" id="colorpick2"></h2>
+                <h2>Secondary Color 2   <input onchange="change3(this.value)" type="color" id="colorpick3"></h2>
+                <h2>Ribbon Color   <input onchange="change4(this.value)" type="color" id="colorpick4"></h2>
+            </div>
+        </div>
+
         <div id="pattern-container">
-            <% for(var x = 0; x < 10; x ++) { %>
-                <span>
+            <% for(var x = 0; x < 20; x ++) { %>
+                <span style="overflow:hidden;">
                 <% for(var y = 0; y < 10; y ++) { %>
                     <div id="block">
                         <div id="color">
@@ -20,6 +39,8 @@
                         </div>
                         <div id="line1"></div>
                         <div id="line2"></div>
+                        <div id="line3"></div>
+                        <div id="line4"></div>
                     </div>
                     <div id="block">
                         <div id="color2">
@@ -27,11 +48,24 @@
                         </div>
                         <div id="line1"></div>
                         <div id="line2"></div>
+                        <div id="line3"></div>
+                        <div id="line4"></div>
                     </div>
                 <% } %>
                 </span>
             <% } %>
         </div>
+        <script>
+            $("#controls").slideToggle();
+            $("#front_btn").click(function(){
+                $("#controls").slideToggle();
+                console.log('shift')
+            });
+            $("#close_btn").click(function(){
+                $("#controls").slideToggle();
+                console.log('shift')
+            });
+         </script>
     </body>
     
 </html>
