@@ -1,20 +1,16 @@
 var x = 0;
 var container = document.getElementById("pattern-container");
 
-window.onload = function() 
-{
+window.onload = function() {
     container = document.getElementById("pattern-container");
     setInterval(main, 20);
 }
 
-function main()
-{
-    if (x > 142)
-    {
+function main() {
+    if (x > 140){
         x = 0;
     }
-    else
-    {
+    else{
         x += 2;
     }
     container.style.marginLeft = (x - 300).toString() + 'px';
