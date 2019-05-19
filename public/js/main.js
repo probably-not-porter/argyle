@@ -3,7 +3,7 @@ var container = document.getElementById("pattern-container");
 
 window.onload = function() {
     container = document.getElementById("pattern-container");
-    setInterval(main, 20);
+    setInterval(main, 10);
     document.getElementById("colorpick1").value = getComputedStyle(document.documentElement).getPropertyValue('--color-1');
     document.getElementById("colorpick2").value = getComputedStyle(document.documentElement).getPropertyValue('--color-2');
     document.getElementById("colorpick3").value = getComputedStyle(document.documentElement).getPropertyValue('--color-3');
@@ -28,7 +28,7 @@ function main() {
         x = 0;
     }
     else{
-        x += 2;
+        x += 1;
     }
     container.style.marginLeft = (x - 600).toString() + 'px';
     container.style.marginTop = (x / 2 - 600).toString() + 'px';
