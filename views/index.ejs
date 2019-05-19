@@ -6,11 +6,31 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body>
-        <div style="position: absolute; left: font-size: 20px;">
-            <h1>Maze Generator</h1>
-            <h2>Porter Libby 2019</h2>
-            <span id="maze">
-            </span>
+        <div id="label">
+            <h1>Argyle</h1>
+            <h2>Porter Libby - 2019</h2>
+        </div>
+        <div id="pattern-container">
+            <% for(var x = 0; x < 10; x ++) { %>
+                <span>
+                <% for(var y = 0; y < 10; y ++) { %>
+                    <div id="block">
+                        <div id="color">
+                            
+                        </div>
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                    </div>
+                    <div id="block">
+                        <div id="color2">
+                            
+                        </div>
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                    </div>
+                <% } %>
+                </span>
+            <% } %>
         </div>
     </body>
     
